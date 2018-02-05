@@ -1,0 +1,17 @@
+* {
+  font-family: "Source Sans Pro", Calibri,  sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+iframe{
+  border: 0px;
+}
