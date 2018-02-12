@@ -1,11 +1,29 @@
-@media only screeen and (min-width: 650px){
+@media only screen and (min-width: 650px){
   .top-nav ul li{
-    display:inline-block;
+    float: right;
+    padding-top: 1%;
   }
 
-  body{
-    background-color: yellow;
+  .logo{
+    float: left;
   }
 
-  
+
+}
+
+@media only screen and (min-width: 100px){
+  .top-nav ul li{
+    float: right;
+    padding-top: 1%;
+  }
+
+  .logo{
+    float: left;
+  }
+
+  .crafts {
+    display:inline;
+  }
+
+
 }

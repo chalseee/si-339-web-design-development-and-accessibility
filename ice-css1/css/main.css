@@ -14,6 +14,7 @@ nav {
 
 #wrap {
   background-color: #5A5A5A;
+  border: 2px solid;
 }
 
 header {
@@ -45,8 +46,9 @@ nav a {
 
 aside {
   width: 20%;
-  float: right;
-  height: 100%;
+  position: absolute;
+  right: 10%;
+  height: auto;
   background: url("http://www.literarygenius.info/images/william-shakespeare.jpg") no-repeat white center;
   background-size: 150px 150px;
   background-position: 0px 100px;
