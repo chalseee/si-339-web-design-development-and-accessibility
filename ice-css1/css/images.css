@@ -1,0 +1,44 @@
+@keyframes first {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+.hover{
+  animation-name: first;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes background {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
+body {
+  animation-name: background;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes second {
+  from { border: 20px dotted yellow;}
+  to { border-style: 50px dotted green;}
+}
+
+.active {
+  animation-name: second;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes third {
+    from { transform: translateY(0px);}
+    from { transform: translateY(1000px);}
+}
+
+.focus {
+  animation-name: third;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
