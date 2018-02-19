@@ -1,29 +1,38 @@
 @media only screen and (min-width: 650px){
-  .top-nav ul li{
-    float: right;
-    padding-top: 1%;
-  }
+ul {
+  padding: 10px;
+  display:inline-grid;
+}
 
-  .logo{
-    float: left;
-  }
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
+.blueimg, .yellowimg {
 
 }
 
-@media only screen and (min-width: 100px){
+.square {
+}
+}
+
+@media only screen and (min-width: 1000px){
   .top-nav ul li{
     float: right;
     padding-top: 1%;
   }
 
-  .logo{
+  .logo {
     float: left;
   }
 
-  .crafts {
-    display:inline;
+  .photo-grid{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
   }
 
+  .blueimg, .yellowimg{
 
+  }
 }
