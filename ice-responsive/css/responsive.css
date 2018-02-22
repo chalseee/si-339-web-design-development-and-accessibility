@@ -11,26 +11,27 @@
 }
 
 #vertical{
-  width: 47%;
+  width: 45%;
   display: inline-block;
 }
 
   .logo {
-    text-align: left;
+    align: left;
   }
 }
 
 
 @media only screen and (min-width: 1000px){
-  #vertical {
-      display: inline-block;
-  }
-
   .top-nav ul li{
     display: inline-block;
   }
 
-  .top-nav{
+  #vertical{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .top-nav ul{
     align-items: center;
   }
 
@@ -54,5 +55,9 @@
 
   .blue {
     grid-column: 2/3;
+  }
+
+  .logo {
+    text-align: left;
   }
 }
