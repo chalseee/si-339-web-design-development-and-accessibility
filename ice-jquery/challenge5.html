@@ -36,8 +36,31 @@
 	}
 	</style>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at:
+    $(document).ready(function(){
+      //Use the .attr method to get attributes
+
+      // Use the .text method to update the content:
+      // selector.text(newValue)
+
+      // Use the .css method to update the content:
+      // selector.css(attribute, newValue)
+
+
+        $(".preview" ).on('focus mouseover',function() {
+          // 1) Take the alt text of the preview picture I just put into focus
+          // 2) Use this to set the text of the image
+        $("#image").text($(this).attr("alt"));
+        $("#image").css('background-image', 'url("' + $(this).attr("src") + '")');
+        })
+
+        $(".preview" ).on('blur mouseleave',function() {
+        $("#image").text("Hover over an image below");
+        $("#image").css('background-image', '');
+      })
+    });
 	// https://codepen.io/ColleenEMc/pen/XmZzWw
 	</script>
 </head>

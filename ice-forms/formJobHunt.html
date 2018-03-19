@@ -32,13 +32,13 @@
 
 		<fieldset>
 			<legend>Contact Information:</legend>
-			<label>Phone number: <input type="text"></label><br><br>
+			<label>Phone number: <input type="text" class="input-medium bfh-phone" id="phoneNumber"  placeholder="(xxx) xxx-xxxx" data-format="(ddd) ddd-dddd" onblur="clearPhone()"></label><br><br>
 
 		<label>Country of Citizenship: <select id="country" class="bfh-countries" data-country="US"></select><br></label><br>
 
 		<label> Address: <input type="text" id="address" name="address" size="50" placeholder = "1234 N Wells St"></label><br>
 		<label> City: <input type="text" name="city"  placeholder = "Ann Arbor"></label>
-		<label> State: <input type="text" name="state"  placeholder = "MI"></label>
+		<label> State: <select class="input-medium bfh-states" data-country="US"  data-state = "MI"></select></label>
 		<label> Zip code: <input type="text" name="Zip code"  placeholder = "48108"></label><br>
 		</fieldset><br>
       </div>
@@ -170,5 +170,16 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-formhelpers.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.js"></script>
+    <script>
+        function clearPhone(){
+            var phoneField = document.getElementById('phoneNumber');
+            if (phoneField.value == "(" || phoneField.value == "( ") {
+                phoneField.value = "";
+                console.log("Cleared")
+            }
+        }
+
+    </script>
+
 	</body>
 </html>
