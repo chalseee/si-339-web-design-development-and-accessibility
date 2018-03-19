@@ -1,7 +1,12 @@
 *{
-  color: coral;
+  color: white;
 }
 
 body {
-  
+  background-color: rgba(52,63,82,0.7);
+}
+
+legend{
+  font-weight: bold;
+  font-style:italic;
 }
