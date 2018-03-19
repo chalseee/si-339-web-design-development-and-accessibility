@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight|Nanum+Gothic+Coding');
+
 *{
-  color: white;
+  font-family: "Nanum Gothic Coding", monospace;
 }
 
 body {
   background-color: rgba(52,63,82,0.7);
+  color: white;
 }
 
-legend{
+legend, h2, h4 {
   font-weight: bold;
-  font-style:italic;
+  font-family: "Limelight", cursive;
 }
