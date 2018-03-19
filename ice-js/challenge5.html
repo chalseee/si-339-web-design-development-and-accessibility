@@ -44,7 +44,7 @@
 		</div>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview"
+		<img class = "preview" onmouseover = "upDate(this)" onmouseleave = "unDo()"
 			alt = "Styling with a Bandana"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg";
 			>
@@ -52,33 +52,27 @@
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
 		<img class = "preview"
-			alt = "With My Boy"
+			alt = "With My Boy" onmouseover="upDate(this)" onmouseleave = "unDo()"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG";>
 
 		<!-- Your code goes in the img tag below.  Make sure to react to "hovering" and "tabbing": -->
-		<img class = "preview" tabindex = "1"
+		<img class = "preview" tabindex = "1" onmouseover="upDate(this)" onmouseleave = "unDo()"
 			src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
 			alt = "Young Puppy";>
 
       <script type="text/javascript">
-      // I used Two functions here.  Starter idea at:
-      // https://codepen.io/ColleenEMc/pen/XmZzWw
-        var mainImage = document.getElementById("image");
-        var sourceImages = document.getElementsByTagName("img");
-          console.log(1);
-        for (var i = 0; i < sourceImages.length; i++){
+				orig_txt = document.getElementById("image").innerHTML;
+				orig_style = document.getElementById("image").style.background
 
-          var elem = sourceImages[i];
-          elem.onmouseenter = function() {
-            console.log("Mouse entered!")
-            //Step1: Get the alt text from 'elem'
-            //Step2: Set the alt in the 'mainImage'
-          };
-          elem.onmouseleave = function() {
-            console.log("Mouse left!")
-            //Step 1: set the alt in the mainImage to the default value
-          };
-        }
-    </script>
+				function upDate(previewPic){
+					document.getElementById("image").innerHTML=previewPic.alt;
+					document.getElementById("image").style.background = "url(" + previewPic.src + ")";
+				};
+
+				function unDo(){
+					document.getElementById("image").innerHTML=orig_txt;
+					document.getElementById("image").style.background = orig_style;
+				};
+    	</script>
 </body>
 </html>
