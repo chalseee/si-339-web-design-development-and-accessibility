@@ -5,10 +5,16 @@
 	<title>Challenge 3</title>
     <script type="text/javascript">
     function checkForm(){
-			if (document.getElementById("opt-straw").checked){
-				console.log('good!')
+			if (document.getElementById("opt-straw").checked && document.getElementById("opt-blue").checked){
+				console.log('both radios are checked')
+				return false;
 			}
-			// Write a function that ensures at least one but ONLY one radio button is selected.  Make sure the form action is not performed if either field is blank.
+
+			if (!document.getElementById("opt-straw").checked && !document.getElementById("opt-blue").checked){
+				console.log('neither radios are checked')
+				return false;
+			}
+			return true;
 		}
     </script>
 </head>
