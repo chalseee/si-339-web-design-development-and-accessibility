@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background: url("../images/halftone-yellow.png");
   margin: auto;
@@ -8,3 +9,19 @@ img{
   padding: 5%;
   width: 35%;
 }
+=======
+body {
+  background: url("../images/halftone-yellow.png");
+  margin: auto;
+}
+
+img{
+  border: solid 5px blue;
+  padding: 5%;
+  width: 39%;
+}
+
+#centered-img{
+  left: 50%;
+}
+>>>>>>> a67b1b928b432b173f4dd7af2f55ce6fff52f97d
