@@ -2,15 +2,30 @@
 <html lang="en">
   <head>
     <title>Exam 2</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
     <h1>Chalse Okorom</h1>
-      <img alt="colleen & family" src="images/examPic.JPG" />
-      <img alt="UMSI logo" src="images/UMSI-logo.jpg" />
+      <div class="row col-xs-12 col-sm-6">
+        <img alt="colleen" id="toggle-img" src="images/examPic.JPG" />
+        <img alt="UMSI logo" id="centered-img" src="images/UMSI-logo.jpg" />
+      </div>
   </body>
 
+
+  <button type="button" onclick="hide_img()">Hide Image</button> 
+  <button type="button" onclick="show_img()">Show Image</button>
+
+  <script>
+    function hide_img(){
+      document.getElementById("toggle-img").style.display="none";
+    }
+
+    function show_img(){
+      document.getElementById("toggle-img").style.display="inline";
+    }
+  </script>
 
 </html>
