@@ -1,0 +1,8 @@
+body {
+  background: url("../images/halftone-yellow.png");
+}
+
+img{
+  border: solid 5px blue;
+  padding: 5%;
+}
