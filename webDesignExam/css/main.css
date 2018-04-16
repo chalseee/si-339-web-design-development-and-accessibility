@@ -1,8 +1,14 @@
 body {
   background: url("../images/halftone-yellow.png");
+  margin: auto;
 }
 
 img{
   border: solid 5px blue;
   padding: 5%;
+  width: 39%;
+}
+
+#centered-img{
+  left: 50%;
 }
