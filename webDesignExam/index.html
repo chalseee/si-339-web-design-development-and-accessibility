@@ -2,31 +2,33 @@
 <html lang="en">
   <head>
     <title>Exam 2</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
     <h1>Chalse Okorom</h1>
-      <div class="row col-xs-12 col-md-6">
-        <img alt="colleen & family" id="toggle-img" src="images/examPic.JPG" />
+      <div class="row col-xs-6">
+        <img alt="colleen" id="toggle-img" src="images/examPic.JPG" />
         <img alt="UMSI logo" id="centered-img" src="images/UMSI-logo.jpg" />
       </div>
+
+
+      <button type="button" onclick="hide_img()">Hide Image</button>
+      <button type="button" onclick="show_img()">Show Image</button>
+
+      <script>
+        function hide_img(){
+          document.getElementById("toggle-img").style.display="none";
+          document.getElementById("centered-img").style.marginLeft="25%";
+        }
+
+        function show_img(){
+          document.getElementById("toggle-img").style.display="inline";
+          document.getElementById("centered-img").style.marginLeft="0px";
+        }
+      </script>
   </body>
-
-  <form>
-    <input type="button" value="Hide Image" onclick="hide_img()">
-    <input type="button" value="Show Image" onclick="show_img()">
-  </form>
-
-  <script>
-    function hide_img(){
-      document.getElementById("toggle-img").style.display="none";
-    }
-
-    function show_img(){
-      document.getElementById("toggle-img").style.display="inline";
-    }
-  </script>
 
 </html>
